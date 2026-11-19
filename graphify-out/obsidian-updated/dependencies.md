@@ -1,0 +1,18 @@
+---
+source_file: "package.json"
+type: "code"
+community: "Frontend Build Dependencies"
+location: "L23"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Frontend_Build_Dependencies
+---
+
+# dependencies
+
+## Connections
+- [[package.json]] - `contains` [EXTRACTED]
+- [[three@0.187.0]] - `contains` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Frontend_Build_Dependencies

@@ -1,0 +1,16 @@
+---
+source_file: ""
+type: "code"
+community: "Community 114"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Community_114
+---
+
+# Spatie\Permission\Middleware\RoleMiddleware
+
+## Connections
+- [[bootstrapapp.php]] - `imports` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Community_114

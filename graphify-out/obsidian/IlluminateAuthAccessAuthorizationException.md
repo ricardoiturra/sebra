@@ -1,0 +1,16 @@
+---
+source_file: ""
+type: "code"
+community: "Remove Team Member Action"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Remove_Team_Member_Action
+---
+
+# Illuminate\Auth\Access\AuthorizationException
+
+## Connections
+- [[RemoveTeamMember.php]] - `imports` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Remove_Team_Member_Action

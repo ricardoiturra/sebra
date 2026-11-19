@@ -1,0 +1,85 @@
+---
+source_file: "app/Models/User.php"
+type: "code"
+community: "Community 0"
+location: "L16"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Community_0
+---
+
+# User
+
+## Connections
+- [[dot-add()]] - `references` [EXTRACTED]
+- [[dot-addTeamMember()]] - `references` [EXTRACTED]
+- [[dot-authorize()]] - `references` [EXTRACTED]
+- [[dot-casts()]] - `method` [EXTRACTED]
+- [[dot-create()_2]] - `references` [EXTRACTED]
+- [[dot-create()_1]] - `references` [EXTRACTED]
+- [[dot-create()]] - `references` [EXTRACTED]
+- [[dot-createTeam()]] - `references` [EXTRACTED]
+- [[dot-delete()_1]] - `references` [EXTRACTED]
+- [[dot-delete()]] - `references` [EXTRACTED]
+- [[dot-deleteTeams()]] - `references` [EXTRACTED]
+- [[dot-ensureUserDoesNotOwnTeam()]] - `references` [EXTRACTED]
+- [[dot-invite()]] - `references` [EXTRACTED]
+- [[dot-remove()]] - `references` [EXTRACTED]
+- [[dot-removeTeamMember()]] - `references` [EXTRACTED]
+- [[dot-reset()]] - `references` [EXTRACTED]
+- [[dot-update()]] - `references` [EXTRACTED]
+- [[dot-update()_1]] - `references` [EXTRACTED]
+- [[dot-update()_3]] - `references` [EXTRACTED]
+- [[dot-update()_2]] - `references` [EXTRACTED]
+- [[dot-updateTeamMember()]] - `references` [EXTRACTED]
+- [[dot-updateVerifiedUser()]] - `references` [EXTRACTED]
+- [[dot-view()]] - `references` [EXTRACTED]
+- [[dot-viewAny()]] - `references` [EXTRACTED]
+- [[AddTeamMember.php]] - `imports` [EXTRACTED]
+- [[ApiTokenPermissionsTest.php]] - `imports` [EXTRACTED]
+- [[AuthenticationTest.php]] - `imports` [EXTRACTED]
+- [[BrowserSessionsTest.php]] - `imports` [EXTRACTED]
+- [[CreateApiTokenTest.php]] - `imports` [EXTRACTED]
+- [[CreateNewUser.php]] - `imports` [EXTRACTED]
+- [[CreateTeam.php]] - `imports` [EXTRACTED]
+- [[CreateTeamTest.php]] - `imports` [EXTRACTED]
+- [[DatabaseSeeder.php]] - `imports` [EXTRACTED]
+- [[DeleteAccountTest.php]] - `imports` [EXTRACTED]
+- [[DeleteApiTokenTest.php]] - `imports` [EXTRACTED]
+- [[DeleteTeamTest.php]] - `imports` [EXTRACTED]
+- [[DeleteUser.php]] - `imports` [EXTRACTED]
+- [[EmailVerificationTest.php]] - `imports` [EXTRACTED]
+- [[IlluminateDatabaseEloquentFactoriesHasFactory]] - `mixes_in` [EXTRACTED]
+- [[IlluminateFoundationAuthUser]] - `inherits` [EXTRACTED]
+- [[IlluminateNotificationsNotifiable]] - `mixes_in` [EXTRACTED]
+- [[InviteTeamMember.php]] - `imports` [EXTRACTED]
+- [[InviteTeamMemberTest.php]] - `imports` [EXTRACTED]
+- [[LaravelFortifyTwoFactorAuthenticatable]] - `mixes_in` [EXTRACTED]
+- [[LaravelJetstreamHasProfilePhoto]] - `mixes_in` [EXTRACTED]
+- [[LaravelJetstreamHasTeams]] - `mixes_in` [EXTRACTED]
+- [[LaravelSanctumHasApiTokens]] - `mixes_in` [EXTRACTED]
+- [[LeaveTeamTest.php]] - `imports` [EXTRACTED]
+- [[PasswordConfirmationTest.php]] - `imports` [EXTRACTED]
+- [[PasswordResetTest.php]] - `imports` [EXTRACTED]
+- [[ProfileInformationTest.php]] - `imports` [EXTRACTED]
+- [[RemoveTeamMember.php]] - `imports` [EXTRACTED]
+- [[RemoveTeamMemberTest.php]] - `imports` [EXTRACTED]
+- [[ResetUserPassword.php]] - `imports` [EXTRACTED]
+- [[SpatiePermissionTraitsHasRoles]] - `mixes_in` [EXTRACTED]
+- [[TeamFactory.php]] - `imports` [EXTRACTED]
+- [[TeamPolicy.php]] - `imports` [EXTRACTED]
+- [[TwoFactorAuthenticationSettingsTest.php]] - `imports` [EXTRACTED]
+- [[UpdatePasswordTest.php]] - `imports` [EXTRACTED]
+- [[UpdateTeamMemberRoleTest.php]] - `imports` [EXTRACTED]
+- [[UpdateTeamName.php]] - `imports` [EXTRACTED]
+- [[UpdateTeamNameTest.php]] - `imports` [EXTRACTED]
+- [[UpdateUserPassword.php]] - `imports` [EXTRACTED]
+- [[UpdateUserProfileInformation.php]] - `imports` [EXTRACTED]
+- [[User.php]] - `contains` [EXTRACTED]
+- [[UserFactory.php]] - `imports` [EXTRACTED]
+- [[auth.php]] - `imports` [EXTRACTED]
+- [[{closure2}()]] - `references` [EXTRACTED]
+- [[{closure2}()_7]] - `references` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Community_0

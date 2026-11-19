@@ -1,6 +1,12 @@
 # SeBra — Second Brain
 
+<img src="public/sebra-logo.png" alt="Logo de SeBra" width="240">
+
 Aplicación Laravel 13 con Jetstream/Livewire, equipos, proyectos, notas Markdown, recuperación Graphify, IA configurable, voz por turnos y visualización Three.js con giro y resaltado temporal de comunidades; el backend conserva IDs verificados.
+
+## Demostración
+
+![Demostración de SeBra](docs/assets/sebra-demo.gif)
 
 ## Política obligatoria Docker-First
 

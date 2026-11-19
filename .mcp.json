@@ -1,0 +1,32 @@
+{
+    "mcpServers": {
+        "laravel-boost": {
+            "command": "docker",
+            "args": [
+                "compose",
+                "exec",
+                "-T",
+                "-e",
+                "APP_ENV=local",
+                "-e",
+                "DB_CONNECTION=sqlite",
+                "-e",
+                "DB_DATABASE=:memory:",
+                "-e",
+                "DB_URL=",
+                "-e",
+                "CACHE_STORE=array",
+                "-e",
+                "SESSION_DRIVER=array",
+                "-e",
+                "LOG_CHANNEL=stderr",
+                "-e",
+                "APP_CONFIG_CACHE=/tmp/sebra-boost-config-disabled.php",
+                "web",
+                "php",
+                "artisan",
+                "boost:mcp"
+            ]
+        }
+    }
+}

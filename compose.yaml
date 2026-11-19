@@ -1,0 +1,83 @@
+name: sebra
+
+services:
+  web:
+    image: sebra-web
+    build:
+      context: .
+      args:
+        APP_UID: "1000"
+        APP_GID: "1000"
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    restart: unless-stopped
+    ports:
+      - "127.0.0.1:8081:80"
+    depends_on:
+      redis:
+        condition: service_healthy
+    environment: &sebra-environment
+      APP_NAME: SeBra
+      APP_ENV: production
+      APP_DEBUG: "true"
+      APP_URL: http://127.0.0.1:8081
+      REDIS_CLIENT: predis
+      REDIS_HOST: redis
+      DB_CONNECTION: sqlite
+      DB_DATABASE: /var/lib/sebra/database/database.sqlite
+    volumes:
+      - .:/var/www/html
+      - app:/var/lib/sebra
+    healthcheck:
+      test: ["CMD", "curl", "--fail", "--silent", "http://127.0.0.1/up"]
+      interval: 10s
+      timeout: 3s
+      retries: 5
+      start_period: 30s
+
+  project-import-worker:
+    image: sebra-web
+    user: "1000:1000"
+    restart: unless-stopped
+    depends_on:
+      web:
+        condition: service_healthy
+    environment: *sebra-environment
+    volumes:
+      - .:/var/www/html
+      - app:/var/lib/sebra
+    command: ["php", "artisan", "queue:work", "project-imports", "--sleep=2", "--timeout=7200"]
+
+  graph-watcher:
+    image: sebra-web
+    user: "1000:1000"
+    restart: unless-stopped
+    depends_on:
+      web:
+        condition: service_healthy
+    environment:
+      APP_ENV: production
+      APP_URL: http://127.0.0.1:8081
+      REDIS_CLIENT: predis
+      REDIS_HOST: redis
+    volumes:
+      - .:/var/www/html:ro
+    command: ["sh", "watch-graph.sh"]
+
+  redis:
+    image: redis:8-alpine
+    command: ["redis-server", "--appendonly", "yes"]
+    restart: unless-stopped
+    volumes:
+      - sphere-events:/data
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 5s
+      timeout: 3s
+      retries: 5
+
+volumes:
+  sphere-events:
+  app:
+    external: true
+    name: laravel-sqlite_app

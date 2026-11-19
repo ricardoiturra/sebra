@@ -1,0 +1,121 @@
+{
+  "collapse-filter": false,
+  "search": "",
+  "showTags": false,
+  "showAttachments": false,
+  "hideUnresolved": false,
+  "showOrphans": false,
+  "collapse-color-groups": false,
+  "colorGroups": [
+    {
+      "query": "tag:#community/Core_Database_Migrations",
+      "color": {
+        "a": 1,
+        "rgb": 5016565
+      }
+    },
+    {
+      "query": "tag:#community/Testing_Assertions_Guidance",
+      "color": {
+        "a": 1,
+        "rgb": 16097356
+      }
+    },
+    {
+      "query": "tag:#community/Frontend_Build_Dependencies",
+      "color": {
+        "a": 1,
+        "rgb": 5043616
+      }
+    },
+    {
+      "query": "tag:#community/Graph_Visualizer_Modules",
+      "color": {
+        "a": 1,
+        "rgb": 16075915
+      }
+    },
+    {
+      "query": "tag:#community/Jetstream_Features_and_Tests",
+      "color": {
+        "a": 1,
+        "rgb": 10505461
+      }
+    },
+    {
+      "query": "tag:#community/Team_Invitation_Tests",
+      "color": {
+        "a": 1,
+        "rgb": 16111180
+      }
+    },
+    {
+      "query": "tag:#community/Tailwind_and_Agent_Docs",
+      "color": {
+        "a": 1,
+        "rgb": 5043680
+      }
+    },
+    {
+      "query": "tag:#community/Fortify_User_Actions",
+      "color": {
+        "a": 1,
+        "rgb": 16087628
+      }
+    },
+    {
+      "query": "tag:#community/Caching_and_Queue_Jobs",
+      "color": {
+        "a": 1,
+        "rgb": 9172300
+      }
+    },
+    {
+      "query": "tag:#community/Team_Invitation_Action",
+      "color": {
+        "a": 1,
+        "rgb": 9129205
+      }
+    },
+    {
+      "query": "tag:#community/Team_Model_and_Policy",
+      "color": {
+        "a": 1,
+        "rgb": 5008373
+      }
+    },
+    {
+      "query": "tag:#community/Password_Reset_Tests",
+      "color": {
+        "a": 1,
+        "rgb": 16105548
+      }
+    },
+    {
+      "query": "tag:#community/Sphere_Visualizer_Controllers",
+      "color": {
+        "a": 1,
+        "rgb": 5043563
+      }
+    },
+    {
+      "query": "tag:#community/Team_Creation_Tests",
+      "color": {
+        "a": 1,
+        "rgb": 14044405
+      }
+    }
+  ],
+  "collapse-display": true,
+  "showArrow": true,
+  "textFadeMultiplier": 0.35,
+  "nodeSizeMultiplier": 1.1,
+  "lineSizeMultiplier": 0.9,
+  "collapse-forces": true,
+  "centerStrength": 0.35,
+  "repelStrength": 12,
+  "linkStrength": 0.8,
+  "linkDistance": 140,
+  "scale": 0.9,
+  "close": true
+}

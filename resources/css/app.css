@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+[x-cloak] {
+    display: none;
+}
+
+html:has(.sebra-dashboard),
+.sebra-dashboard :is(ul, pre) {
+    scrollbar-color: #3f7187 #101b2b;
+    scrollbar-width: thin;
+}
